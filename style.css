@@ -1,0 +1,131 @@
+/* GLOBAL */
+/*GLOBAL VALUES:
+max-width:1366px;
+color: #383F49; OR color:rgba(56, 63, 73, 1); //dark grey for nav and footer
+*/
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+html, body{
+    width:100%;
+    height:100%;
+}
+html{
+    font-size: 16px;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, nav a{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+
+nav a, footer a{
+    color:inherit;
+}
+
+/*GENERAL*/
+.container{
+
+}
+
+/*NAVIGATION*/
+nav{
+    background-color:rgba(56, 63, 73, 0.95);
+    width:100%;
+    height:70px;
+    position: relative;
+    z-index:1000;
+    color:white;
+}
+.nav__sticky{
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+.nav{
+    max-width:1366px;
+    position:absolute;
+    width:100%;
+    height:auto;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:0 0.2rem;
+
+}
+.nav .logo{
+    float:left;
+}
+
+.nav ul{
+    float:right;
+}
+.nav ul li{
+    display:inline-block;
+    text-align:center;
+    text-transform:uppercase;
+}
+.nav ul li:not(:last-child){
+    margin-right: 2.5rem; /*40px/16px =2.5rem */
+}
+
+.nav-dropdown{
+    position:relative;
+}
+
+ul.nav-dropdown--contents{
+    position:absolute;
+    width:100%;
+    top:100%;
+    left:50%;
+    transform:translatex(-50%);
+    display:none;
+}
+
+ul.nav-dropdown--contents li{
+    display:block;
+    background-color:rgba(200,200,200,0.95);
+    text-transform:capitalize;
+}
+
+/*HEADER*/
+header{
+background-color:grey;
+height: 91vh; /*viewport height = 768; header height = 631px+nav-height; 701/768 = 91.27vh*/
+position:relative;
+}
+#homepage-header{
+    position:relative;
+    top:37%;
+    left:14%;
+}
+#call-to-action{
+    display:block;
+    position:relative;
+    margin-top:3rem;
+    margin-left: 2rem;
+}
+
+/*TOP GAMES*/
+#top-selling{
+    background-color: skyblue;
+}
+/*FOOTER*/
+footer{
+    background-color: #383F49;
+    color:white;
+}

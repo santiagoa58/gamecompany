@@ -38,14 +38,16 @@ nav a, footer a{
 
 /*GENERAL*/
 .container{
-
+    max-width:1366px;
+    margin:0 auto;
+    height:100%;
 }
 
 /*NAVIGATION*/
 nav{
     background-color:rgba(56, 63, 73, 0.95);
     width:100%;
-    height:70px;
+    height:4.375rem; /*70px/16px = 4.375rem*/
     position: relative;
     z-index:1000;
     color:white;
@@ -109,6 +111,8 @@ height: 91vh; /*viewport height = 768; header height = 631px+nav-height; 701/768
 position:relative;
 }
 #homepage-header{
+    height:auto;
+    display:inline-block;
     position:relative;
     top:37%;
     left:14%;

@@ -7,12 +7,12 @@
 </head>
 <body>
 
-    <!-- navigation --> 
+    <!-- navigation -->
     <nav>
         <div class="nav nav__sticky">
-            <a href="index.html" class="logo">GameCompany</a>
+            <a href="index.php" class="logo">GameCompany</a>
             <ul>
-                <li class=""><a href="index.html">HOME</a></li>
+                <li class=""><a href="index.php">HOME</a></li>
                 <li class="nav-dropdown">INFORMATION <span id="icon-dropdown"></span>
                     <ul class="nav-dropdown--contents">
                         <li class=""><a href="#">About Us</a></li>
@@ -21,7 +21,7 @@
                 </li>
                 <li class=""><a href="#">GAME STORE</a></li>
                 <li class="nav-current"><a href="#">REGISTER</a></li>
-                <li class=""><a href="signin.html">SIGN IN</a></li> 
+                <li class=""><a href="signin.php">SIGN IN</a></li>
                 <li class=""><a href="#">START TRIAL</a></li>
             </ul>
         </div>
@@ -75,7 +75,7 @@
                     <input type="submit" value="Register">
                 </form>
                 <div class="signin-register">
-                    Have an account? <a href="signin.html">Sign In</a>
+                    Have an account? <a href="signin.php">Sign In</a>
                 </div>
             </div>
         </section>
@@ -131,7 +131,7 @@
                     <li class="footer-contents">
                         <ul class="footer-contents--item">
                             <li><a href="#">Register</a></li>
-                            <li><a href="signin.html">Sign In</a></li>
+                            <li><a href="signin.php">Sign In</a></li>
                             <li><a href="#">Account info</a></li>
                             <li><a href="#">Leaderboard</a></li>
                         </ul>

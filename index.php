@@ -3,15 +3,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameCompany - Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Roboto:400,400i,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Roboto:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- navigation --> 
+    <!-- navigation -->
     <nav class="nav__sticky">
         <div class="nav">
-            <a href="index.html" class="logo">LOGO</a>
+            <a href="index.php" class="logo">LOGO</a>
             <ul>
                 <li class="nav-current"><a href="#">HOME</a></li>
                 <li class="nav-dropdown">INFORMATION <span id="icon-dropdown"></span>
@@ -21,8 +21,8 @@
                     </ul>
                 </li>
                 <li class=""><a href="#">GAME STORE</a></li>
-                <li class=""><a href="register.html">REGISTER</a></li>
-                <li class=""><a href="signin.html">SIGN IN</a></li> 
+                <li class=""><a href="register.php">REGISTER</a></li>
+                <li class=""><a href="signin.php">SIGN IN</a></li>
                 <li class=""><a href="#">START TRIAL</a></li>
             </ul>
         </div>
@@ -83,7 +83,7 @@
                     <!-- regular membership -->
                     <div class="col-1-of-2">
                         <div class="card card-membership">
-                            <div class="card-membership--content">             
+                            <div class="card-membership--content">
                                 <h3 class="card-membership--title">Regular Membership</h3>
                                 <ul class="card-membership--description">
                                     <li class="card-membership--includes">
@@ -95,11 +95,11 @@
                                     <li class="card-membership--includes">
                                         <span class="check"></span>share gameplay on social media
                                     </li>
-                                </ul>                                
+                                </ul>
                             </div>
                             <div class="card-membership--price">
                                 <h4 class="membership-price">$9.99 <span class="membership-price__small">per month</span></h4>
-                                <button class="btn btn--trial">Start 30 Day Trial</button>                                
+                                <button class="btn btn--trial">Start 30 Day Trial</button>
                             </div>
                         </div>
                     </div>
@@ -203,8 +203,8 @@
                     <li class="footer-title">ACCOUNT</li>
                     <li class="footer-contents">
                         <ul class="footer-contents--item">
-                            <li><a href="register.html">Register</a></li>
-                            <li><a href="signin.html">Sign In</a></li>
+                            <li><a href="register.php">Register</a></li>
+                            <li><a href="signin.php">Sign In</a></li>
                             <li><a href="#">Account info</a></li>
                             <li><a href="#">Leaderboard</a></li>
                         </ul>

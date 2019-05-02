@@ -21,7 +21,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6, nav a{
+h1,h2,h3,h4,h5,h6, nav a, .btn{
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -41,7 +41,59 @@ nav a, footer a{
     max-width:1366px;
     margin:0 auto;
     height:100%;
+    position:relative;
 }
+.row{
+    position:relative;
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+}
+.col-1-of-2, .col-1-of-3, .col-1-of-4, .col-1-of-5{
+    display:inline-block;
+}
+.col-1-of-5:not(:last-child){
+    margin-right: 6.22%;
+}
+.col-1-of-4:not(:last-child){
+    margin-right: 11.13%;
+}
+.col-1-of-2:not(:last-child){
+    margin-right: 16.14%;
+}
+
+/*REUSABLE MODULES*/
+.game-card{
+    width:9rem;
+    border:solid white 6px;
+    height: 13.43rem;
+    margin-bottom:1.06rem;
+}
+.btn{
+    text-align:center;
+    height: auto;
+    padding: 0.625rem 1.25rem;
+    border-style:none;
+    border-radius:7px;
+    color:white;
+    background-color: #383F49;
+}
+.btn:hover{
+    cursor:pointer;
+    transform:translatey(-5%);
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,.15);
+}
+.btn:active{
+    transform:translatey(3%);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,.25);
+}
+section .container{
+    padding-top:4.69rem;
+}
+.section-title--wrapper{
+    margin-bottom:3.875rem;
+}
+
 
 /*NAVIGATION*/
 nav{
@@ -127,7 +179,22 @@ position:relative;
 /*TOP GAMES*/
 #top-selling{
     background-color: skyblue;
+    height:40.19rem;
 }
+#more{
+    float:right;
+    margin-right:10.54%;
+    margin-top: 3.5rem;
+}
+.btn--viewinfo{
+    background-color:rgba(169, 48, 111, 1);
+}
+
+/*MEMBERSHIP*/
+.card-membership--includes{
+    text-align:left;
+}
+
 /*FOOTER*/
 footer{
     background-color: #383F49;

@@ -20,7 +20,7 @@
                         <li class=""><a href="#">Statistics</a></li>
                     </ul>
                 </li>
-                <li class=""><a href="#">GAME STORE</a></li>
+                <li class=""><a href="gamestore.php">GAME STORE</a></li>
                 <li class=""><a href="register.php">REGISTER</a></li>
                 <li class=""><a href="signin.php">SIGN IN</a></li>
                 <li class=""><a href="#">START TRIAL</a></li>
@@ -177,7 +177,7 @@
                     <li class="footer-contents">
                         <ul class="footer-contents--item">
                             <li><a href="#">Free Trial</a></li>
-                            <li><a href="#">Game Store</a></li>
+                            <li><a href="gamestore.php">Game Store</a></li>
                             <li><a href="#">Memberships</a></li>
                             <li><a href="#">Latest Game</a></li>
                             <li><a href="#">Share on Social Media</a></li>

@@ -3,3 +3,6 @@
 
 # ignore excel files
 *.xlsx
+
+#ignore all .save files
+*.save

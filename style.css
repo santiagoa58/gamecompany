@@ -1,6 +1,7 @@
 /* GLOBAL */
 /*GLOBAL VALUES:
 max-width:1366px;
+color: #F1F1F1; OR color: rgba(241,241,241,1); //off-white
 color: #383F49; OR color:rgba(56, 63, 73, 1); //dark grey for nav and footer
 */
 
@@ -35,6 +36,10 @@ a{
 nav a, footer a{
     color:inherit;
 }
+footer{
+    z-index:1000;
+    position:relative;
+}
 
 /*GENERAL*/
 .container{
@@ -42,6 +47,7 @@ nav a, footer a{
     margin:0 auto;
     height:100%;
     position:relative;
+    border:solid skyblue 4px;
 }
 .row{
     position:relative;
@@ -61,8 +67,25 @@ nav a, footer a{
 .col-1-of-2:not(:last-child){
     margin-right: 16.14%;
 }
+.section-box, .container-box{
+    background-color: #F1F1F1;
+    border-radius:4px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+.section-title--wrapper{
+    position:relative;
+    width:100%;
+}
 
-/*REUSABLE MODULES*/
+.container-box{
+    height: 35.69rem;
+    width:53.25rem;
+    position:absolute;
+    top:25%;
+    left:50%;
+    transform:translate(-50%,-25%);
+}
+
 .game-card{
     width:9rem;
     border:solid white 6px;
@@ -101,7 +124,7 @@ nav{
     width:100%;
     height:4.375rem; /*70px/16px = 4.375rem*/
     position: relative;
-    z-index:1000;
+    z-index:999;
     color:white;
 }
 .nav__sticky{
@@ -109,7 +132,6 @@ nav{
     top:0;
     left:0;
 }
-
 .nav{
     max-width:1366px;
     position:absolute;
@@ -155,6 +177,15 @@ ul.nav-dropdown--contents li{
     background-color:rgba(200,200,200,0.95);
     text-transform:capitalize;
 }
+.left-nav{
+    width:17%;
+    border:solid orange 4px;
+    max-width:14.5rem;
+    z-index: 900;
+    position:fixed;
+    height: calc(100% - 4.375rem);
+    top: 4.375rem;/*height of nav = 70px/16px = 4.375rem */
+}
 
 /*HEADER*/
 header{
@@ -195,8 +226,25 @@ position:relative;
     text-align:left;
 }
 
+/*GAMESTORE*/
+#gamestore{
+    padding-top: 4.375rem;
+    position:relative;
+}
+#gamestore--display{
+    border:solid red 8px;
+    position:absolute;
+    width:83%; /*100% - left nav's width of 17%*/
+    height:100%;
+    top:0;
+    right:0;
+}
+
 /*FOOTER*/
 footer{
     background-color: #383F49;
     color:white;
+}
+footer .container{
+    height:auto;
 }

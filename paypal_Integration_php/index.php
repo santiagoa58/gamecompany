@@ -5,7 +5,7 @@ include_once 'config.php';
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
-<title>PayPal Pro Integration in PHP by CodexWorld</title>
+<title>Game payment page</title>
 
 <!-- stylesheet file -->
 <link rel="stylesheet" href="css/style.css">
@@ -137,7 +137,7 @@ $(document).ready(function(){
 <body>
 <div class="container">
     <div class="card-payment">
-        <h3>PayPal Pro Integration in PHP</h3>
+        <h3>Game payment page</h3>
         
         <!-- Card from -->
         <div id="paymentSection">

@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameCompany - Home</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Roboto:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,25 +34,32 @@
         <section id="gamestore">
             <div class="container">
               <!-- dynamic gamestore display area -->
-                <div id="gamestore--display">
+                <div class="display">
                     <div class="container-box">
                         <div class="row">
                             <div class="container-box--img">
-                            <img src="#" alt="game">
-                            <div class="rating">****</div>
+                                <img src="#" alt="gameName">
+                                <div id="rating">
+                                    <i class="material-icons">star</i>
+                                    <i class="material-icons">star</i>
+                                    <i class="material-icons">star</i>
+                                    <i class="rating--inactive material-icons">star</i>
+                                    <i class="rating--inactive material-icons">star</i>
+                                </div>
                             </div>
-                            <div class="container-box--title">War Game</div>
+                            <div class="container-box--title"><h3>War Game</h3></div>
                         </div>
                         <div class="content-box--contents">
-                            <div class="contents--title">Synopsis</div>
-                            <div class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            <h4 class="contents--title">Synopsis</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <button class="btn">Buy Now</button>
                         </div>
                     </div>
                 </div>
                 <!-- left-nav -->
                 <nav class="left-nav">
-                    <div class="left-nav--title">GAME STORE</div>
+                    <div class="left-nav--title"><h3>GAME STORE</h3></div>
                         <ul>
                         <li class="">Latest Game</li>
                         <li class="">Top Selling Games</li>

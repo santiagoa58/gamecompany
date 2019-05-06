@@ -144,6 +144,11 @@ header .container{
     transform:translate(-50%,-25%);
     overflow:hidden;
 }
+.card{
+    position:relative;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+}
 .game-card{
     width:9rem;
     border:solid black 6px;
@@ -346,9 +351,31 @@ position:relative;
 #membership{
     background-color:grey;
 }
+.card-membership{
+    width:22rem;
+    height: 31rem;
+    background-color:white;
+}
+.card-membership--price{
+    height:11rem;
+    background-color:#05518B;
+    position:absolute;
+    bottom:0;
+    right:0;
+    left:0;
+}
+.membership-price{
+    color:#ffffff;
+}
+.card-membership--title{
+    padding-top: 2.5rem;
+    padding-bottom: 2.1rem;
+}
 .card-membership--includes{
     text-align:left;
+    border:solid red 3px;
 }
+
 
 /*FAQ*/
 #faq{

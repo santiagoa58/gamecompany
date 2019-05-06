@@ -2,9 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameCompany - Home</title>
+    <title>GameCompany -Game Store</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Roboto:400,400i,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,14 +13,14 @@
         <div class="nav">
             <a href="index.php" class="logo">LOGO</a>
             <ul>
-                <li class="nav-current"><a href="#">HOME</a></li>
-                <li class="nav-dropdown">INFORMATION <span id="icon-dropdown"></span>
+                <li class=""><a href="#">HOME</a></li>
+                <li class="nav-dropdown">INFORMATION
                     <ul class="nav-dropdown--contents">
                         <li class=""><a href="#">About Us</a></li>
                         <li class=""><a href="#">Statistics</a></li>
                     </ul>
                 </li>
-                <li class=""><a href="#">GAME STORE</a></li>
+                <li class="nav-current"><a href="#">GAME STORE</a></li>
                 <li class=""><a href="register.php">REGISTER</a></li>
                 <li class=""><a href="signin.php">SIGN IN</a></li>
                 <li class=""><a href="#">START TRIAL</a></li>
@@ -40,11 +39,11 @@
                             <div class="container-box--img">
                                 <img src="#" alt="gameName">
                                 <div id="rating">
-                                    <i class="material-icons">star</i>
-                                    <i class="material-icons">star</i>
-                                    <i class="material-icons">star</i>
-                                    <i class="rating--inactive material-icons">star</i>
-                                    <i class="rating--inactive material-icons">star</i>
+                                    <i class="icon">&#9733;</i>
+                                    <i class="icon">&#9733;</i>
+                                    <i class="icon">&#9733;</i>
+                                    <i class="icon">&#9733;</i>
+                                    <i class="icon icon__inactive">&#9733;</i>
                                 </div>
                             </div>
                             <div class="container-box--title"><h3>War Game</h3></div>
@@ -52,8 +51,7 @@
                         <div class="content-box--contents">
                             <h4 class="contents--title">Synopsis</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <button class="btn">Buy Now</button>
+                            <button class="btn btn--buynow">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -61,9 +59,9 @@
                 <nav class="left-nav">
                     <div class="left-nav--title"><h3>GAME STORE</h3></div>
                         <ul>
-                        <li class="">Latest Game</li>
-                        <li class="">Top Selling Games</li>
-                        <li class="">All Games</li>
+                        <li class="left-nav--active"><a href=#>Latest Game</a></li>
+                        <li class=""><a href=#>Top Selling Games</a></li>
+                        <li class=""><a href=#>All Games</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -71,9 +69,9 @@
             </div>
         </section>
     </main>
-    <footer class="footer--bottom">
+    <footer>
         <div class="row container">
-            <div class="col-1-of-5">
+            <div class="row-item">
                 <ul class="footer-list">
                     <li class="footer-title">THE TEAM</li>
                     <li class="footer-contents">
@@ -87,7 +85,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-1-of-5">
+            <div class="row-item">
                 <ul class="footer-list">
                     <li class="footer-title">SERVICES</li>
                     <li class="footer-contents">
@@ -101,7 +99,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-1-of-5">
+            <div class="row-item">
                 <ul class="footer-list">
                     <li class="footer-title">INFORMATION</li>
                     <li class="footer-contents">
@@ -114,7 +112,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-1-of-5">
+            <div class="row-item">
                 <ul class="footer-list">
                     <li class="footer-title">ACCOUNT</li>
                     <li class="footer-contents">
@@ -127,7 +125,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-1-of-5">
+            <div class="row-item">
                 <div class="logo footer-logo">&copy;GameCompany</div>
             </div>
         </div>

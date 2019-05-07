@@ -29,9 +29,6 @@ body{
     background-color:white;
     position:relative;
 }
-section{
-    /* overflow:hidden; */
-}
 h1,h2,h3,h4,h5,h6, nav a, .btn, nav .nav-dropdown{
     font-family: 'Montserrat', sans-serif;
 }
@@ -133,9 +130,6 @@ form .row{
     padding-bottom:3.4rem;
     
 }
-.section-wrapper{
-    margin: 4.375rem 0;
-}
 .section-title--wrapper{
     position:relative;
     text-align:center;
@@ -151,7 +145,6 @@ form .row{
 .container-box{
     /* height: 75.15%;
     width: 79.75%; */
-    margin: 4.375rem 2rem;
     padding: 5rem 1rem;
     position:relative;
 }
@@ -196,8 +189,8 @@ form .row{
     background-color: #1B6095;
     padding: 0.67rem 3rem;
 }
-section .container{
-    padding-top:4.69rem;
+section > .container{
+    padding:4.69rem 0;
 }
 .section-title--wrapper{
     margin-bottom:3.875rem;
@@ -307,16 +300,17 @@ header{
 background-color:grey;
 height: 91vh; /*viewport height = 768; header height = 631px+nav-height; 701/768 = 91.27vh*/
 position:relative;
+min-height: 28rem;
+overflow:auto;
 }
 header .container{
     height:100%;
 }
 #homepage-header{
     height:auto;
-    display:inline-block;
     position:relative;
     top:37%;
-    left:14%;
+    padding-left:13%;
 }
 #call-to-action{
     display:block;
@@ -341,7 +335,6 @@ header .container{
 #top-selling .container{
     text-align:left;
     overflow:auto;
-    padding-bottom: 2.75rem;
 }
 #top-selling .section-title--wrapper{
     text-align:left;
@@ -408,9 +401,6 @@ ul.card-membership--description li:not(:last-child){
 
 
 /*FAQ*/
-#faq{
-    height: 80vh;
-}
 #faq .section-box{
     background-color: #F1F1F1;
 }
@@ -430,23 +420,17 @@ ul.card-membership--description li:not(:last-child){
 }
 
 /*GAMESTORE*/
-#gamestore{
-    padding-top: 4.375rem;
+.dashboard{
+    padding: 4.375rem 0;
     position:relative;
-    height:100%;
+    min-height:90%;
 }
 .display{
-    width:83%; /*100% - left nav's width of 17%*/
+    width:79%; /*100% - left nav's width of 17%*/
     background-color:white;
     display:inline-block;
-    margin-left: 17%;
+    margin-left: 18%;
     position:relative;
-}
-.display .container-box{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:space-evenly;
 }
 .container-box--img{
     position:relative;

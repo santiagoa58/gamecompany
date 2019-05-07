@@ -16,7 +16,7 @@ color: #777C86; //grey (for greyed out rating)
     padding:0;
     margin:0;
 }
-html, body{
+html{
     width:100%;
     height:100%;
 }
@@ -27,9 +27,10 @@ body{
     line-height: 1.5;
     font-family: 'Roboto', sans-serif;
     background-color:white;
+    position:relative;
 }
 section{
-    overflow:hidden;
+    /* overflow:hidden; */
 }
 h1,h2,h3,h4,h5,h6, nav a, .btn, nav .nav-dropdown{
     font-family: 'Montserrat', sans-serif;
@@ -53,7 +54,6 @@ h4{
 }
 p{
     text-align:left;
-    line-height:1.5;
     padding: 1.5rem 1.25rem 0rem 1.25rem;
 }
 p:last-of-type{
@@ -69,10 +69,13 @@ a{
 nav a, footer a, nav h1, nav h2, nav h3, nav h4, nav h5, nav h6{
     color:inherit;
 }
+main{
+    overflow:hidden;
+}
 footer{
     background-color: #383F49;
     color:white;
-    z-index:1000;
+    z-index:900;
     position:relative;
     font-weight:400;
     font-size: 0.75rem;
@@ -84,7 +87,8 @@ footer{
 .container{
     max-width:1366px;
     margin:0 auto;
-    height:100%;
+    /*height:100%;*/
+    height:auto;
     position:relative;
     text-align:center;
 }
@@ -106,6 +110,9 @@ header .container{
     justify-content:space-around;
     flex-wrap:wrap;
 }
+form .row{
+    padding-bottom:3rem;
+}
 .row-item{
     margin:1rem;
 }
@@ -115,13 +122,19 @@ header .container{
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
 }
 .section-box{
-    height:32.75rem;
+    /* height:32.75rem; */
+    /* max-height:85%; */
     position:relative;
-    top:30%;
-    transform:translateY(-30%);
+    padding-bottom:5.875rem;
+    margin-top: 4.375rem;
+    margin-bottom:4.375rem;
+}
+.section-box > .section-title{
+    padding-bottom:3.4rem;
+    
 }
 .section-wrapper{
-    height:95%;
+    margin: 4.375rem 0;
 }
 .section-title--wrapper{
     position:relative;
@@ -136,13 +149,11 @@ header .container{
     border-bottom: dotted #666C77 0.43rem;
 }
 .container-box{
-    height: 75.15%;
-    width: 79.75%;
-    position:absolute;
-    top:25%;
-    left:50%;
-    transform:translate(-50%,-25%);
-    overflow:hidden;
+    /* height: 75.15%;
+    width: 79.75%; */
+    margin: 4.375rem 2rem;
+    padding: 5rem 1rem;
+    position:relative;
 }
 .card{
     position:relative;
@@ -183,6 +194,7 @@ header .container{
 }
 .btn--submit{
     background-color: #1B6095;
+    padding: 0.67rem 3rem;
 }
 section .container{
     padding-top:4.69rem;
@@ -197,6 +209,9 @@ section .container{
 }
 .icon__inactive{
     color: #777C86;
+}
+.icon--check{
+    padding-right: 1.25rem;
 }
 
 /*NAVIGATION*/
@@ -271,7 +286,7 @@ ul.nav-dropdown--contents li{
     height: calc(100% - 4.375rem);
     padding-top:8%;
     top: 4.375rem;/*height of nav = 70px/16px = 4.375rem */
-    overflow:hidden;
+    overflow:auto;
 }
 .left-nav--title{
     text-transform:uppercase;
@@ -292,6 +307,9 @@ header{
 background-color:grey;
 height: 91vh; /*viewport height = 768; header height = 631px+nav-height; 701/768 = 91.27vh*/
 position:relative;
+}
+header .container{
+    height:100%;
 }
 #homepage-header{
     height:auto;
@@ -319,10 +337,11 @@ position:relative;
 /*TOP GAMES*/
 #top-selling{
     background-color: white;
-    height:40.19rem;
 }
 #top-selling .container{
     text-align:left;
+    overflow:auto;
+    padding-bottom: 2.75rem;
 }
 #top-selling .section-title--wrapper{
     text-align:left;
@@ -365,15 +384,26 @@ position:relative;
     left:0;
 }
 .membership-price{
+    padding:1.6rem 0;
     color:#ffffff;
+    font-size:2rem;
+}
+.membership-price__small{
+    font-size:1rem;
 }
 .card-membership--title{
     padding-top: 2.5rem;
     padding-bottom: 2.1rem;
 }
-.card-membership--includes{
+.card-membership--description{
+    display:inline-block;
+}
+ul.card-membership--description li{
     text-align:left;
-    border:solid red 3px;
+}
+ul.card-membership--description li:not(:last-child){
+    text-align:left;
+    margin-bottom:1rem;
 }
 
 
@@ -403,23 +433,20 @@ position:relative;
 #gamestore{
     padding-top: 4.375rem;
     position:relative;
+    height:100%;
 }
 .display{
-    position:absolute;
     width:83%; /*100% - left nav's width of 17%*/
-    height:100%;
-    top:0;
-    right:0;
     background-color:white;
+    display:inline-block;
+    margin-left: 17%;
+    position:relative;
 }
 .display .container-box{
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:space-evenly;
-}
-#gamestore .display .row{
-    width:80%;
 }
 .container-box--img{
     position:relative;
@@ -436,6 +463,41 @@ position:relative;
     font-style:italic;
 }
 
+/*REGISTER*/
+.input-container{
+    text-align:left;
+    width:22rem;
+    margin:0 auto;
+}
+.input-container:not(:last-child){
+    margin-bottom:2.25rem;
+}
+.input-container input{
+    background-color:#ffffff;
+    display:block;
+    width:100%;
+    border:solid 2px #444C59;
+    padding:0.75rem 0.5rem 0.75rem 0.5rem;
+    border-radius:7px;
+    font-size:0.9rem;
+}
+.input-container input::placeholder{
+    font-style:italic;
+    font-size:0.875rem;
+}
+.input-container label{
+    display:block;
+    font-weight:700;
+    padding-left:0.5rem;
+    padding-bottom:0.2rem;
+}
+.signin-register{
+    margin-top:2.25rem;
+    display:inline-block;
+    width:17rem;
+    padding-bottom:1rem;
+    border-bottom:solid #95989A 1.15px;
+}
 
 /*FOOTER*/
 .footer-list{

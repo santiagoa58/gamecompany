@@ -28,6 +28,10 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color:white;
     position:relative;
+    overflow:auto;
+}
+main{
+    min-height:95vh;
 }
 h1,h2,h3,h4,h5,h6, nav a, .btn, nav .nav-dropdown{
     font-family: 'Montserrat', sans-serif;
@@ -301,7 +305,6 @@ background-color:grey;
 height: 91vh; /*viewport height = 768; header height = 631px+nav-height; 701/768 = 91.27vh*/
 position:relative;
 min-height: 28rem;
-overflow:auto;
 }
 header .container{
     height:100%;

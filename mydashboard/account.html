@@ -2,9 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameCompany - My Dashboard</title>
+    <title>GameCompany - My Account</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Roboto:400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <!-- navigation -->
@@ -14,9 +14,9 @@
 			<span class="nav--icon">&nbsp;</span>
 		</label>
         <div class="nav">
-            <a href="index.php" class="logo">LOGO</a>
+            <a href="../index.html" class="logo">LOGO</a>
             <ul>
-                <li class=""><a href="#">HOME</a></li>
+                <li class=""><a href="../index.html">HOME</a></li>
                 <li class="nav-dropdown">
                     INFORMATION
                     <ul class="nav-dropdown--contents">
@@ -24,7 +24,7 @@
                         <li class=""><a href="#">Statistics</a></li>
                     </ul>
                 </li>
-                <li class=""><a href="gamestore.php">GAME STORE</a></li>
+                <li class=""><a href="../gamestore/latestgame.html">GAME STORE</a></li>
                 <li class="nav-current"><a href="#">MY DAshboard</a></li>
                 <li class=""><a href="#">START TRIAL</a></li>
             </ul>
@@ -38,27 +38,40 @@
               <!-- dynamic gamestore display area -->
                 <div class="display">
                     <div class="container-box">
-                        <div class="row">
-							<div class="row-item">
-								<div class="game-card">forest game</div>
-								<button class="btn btn--download">Download</button>
-								<button class="btn btn__alt btn__alt--play">Play</button>
-							</div>
-							<div class="row-item">
-								<div class="game-card">city game</div>
-								<button class="btn btn--download">Download</button>
-								<button class="btn btn__alt btn__alt--play">Play</button>
-							</div>
-							<div class="row-item">
-								<div class="game-card">forest game 2</div>
-								<button class="btn btn--download">Download</button>
-								<button class="btn btn__alt btn__alt--play">Play</button>
-							</div>
-							<div class="row-item">
-								<div class="game-card">war game</div>
-								<button class="btn btn--download">Download</button>
-								<button class="btn btn__alt btn__alt--play">Play</button>
-							</div>
+                        <h2 class="section-title">Account Info</h2>
+                        <div id="account">
+                            <div class ="account-row">
+                                <div class="account-data">username</div>
+                                <div class="account-data">username<span class="icon">edit</span></div>
+                            </div>
+                            <div class ="account-row">
+                                <div class="account-data">email</div>
+                                <div class="account-data">example@email.com<span class="icon">edit</span></div>
+                            </div>
+                            <div class ="account-row">
+                                <div class="account-data">full name</div>
+                                <div class="account-data">John Doe<span class="icon">edit</span></div>
+                            </div>
+                            <div class ="account-row">
+                                <div class="account-data">password</div>
+                                <div class="account-data"><span class="password-symbol">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</span><span class="icon">edit</span></div>
+                            </div>
+                            <div class ="account-row">
+                                <div class="account-data">birthday</div>
+                                <div class="account-data">MM/DD/YYYY</div>
+                            </div>
+                            <div class ="account-row">
+                                <div class="account-data">membership type</div>
+                                <div class="account-data">regular membership <span class="icon">change</span></div>
+                            </div>
+                            <div class ="account-row">
+                                <div class="account-data">joined date</div>
+                                <div class="account-data">MM/DD/YYYY</div>
+                            </div>
+                            <div class ="account-row">
+                                <div class="account-data">Number of games</div>
+                                <div class="account-data">4</div>
+                            </div>
                         </div>
                         
                     </div>
@@ -67,10 +80,10 @@
                 <nav class="left-nav">
                     <div class="left-nav--title"><h3>username</h3></div>
                         <ul>
-                        <li class="left-nav--active"><a href=#>My Games</a></li>
-                        <li class=""><a href=#>Leaderboard</a></li>
-                        <li class=""><a href=#>Account Info</a></li>
-                        <li class=""><a href=#>Play Area</a></li>
+                        <li class=""><a href="mygames.html">My Games</a></li>
+                        <li class=""><a href="leaderboard.html">Leaderboard</a></li>
+                        <li class="left-nav--active"><a href="#">Account Info</a></li>
+                        <li class=""><a href="playarea.html">Play Area</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -100,9 +113,9 @@
                     <li class="footer-contents">
                         <ul class="footer-contents--item">
                             <li><a href="#">Free Trial</a></li>
-                            <li><a href="#">Game Store</a></li>
+                            <li><a href="../gamestore/allgames.html">Game Store</a></li>
                             <li><a href="#">Memberships</a></li>
-                            <li><a href="#">Latest Game</a></li>
+                            <li><a href="../gamestore/latestgame.html">Latest Game</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -125,10 +138,10 @@
                     <li class="footer-title">ACCOUNT</li>
                     <li class="footer-contents">
                         <ul class="footer-contents--item">
-                            <li><a href="register.php">Register</a></li>
-                            <li><a href="signin.php">Sign In</a></li>
-                            <li><a href="#">Account info</a></li>
-                            <li><a href="#">Leaderboard</a></li>
+                            <li><a href="../register.html">Register</a></li>
+                            <li><a href="../signin.html">Sign In</a></li>
+                            <li><a href="account.html">Account info</a></li>
+                            <li><a href="leaderboard.html">Leaderboard</a></li>
                         </ul>
                     </li>
                 </ul>

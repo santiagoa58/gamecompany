@@ -276,8 +276,22 @@ nav{
 .nav ul li{
     display:inline-block;
     text-align:center;
+    padding:0;
     text-transform:uppercase;
-    padding-left:1.25rem;
+}
+.nav ul li a:hover, .nav ul li a:focus{
+    background-color:rgba(102,108,119,1);
+    border-bottom: solid #FF7417 1px;
+}
+.nav ul li a{
+    padding: 0.5rem;
+    border-radius:3px;
+    display:block;
+}
+.nav ul li.nav-current a {
+    background-color:rgba(102,108,119,1);
+    border-bottom: solid #FF7417 1px;
+    text-shadow:2px 0px 4px rgba(0,0,0,0.15);
 }
 .nav-dropdown{
     position:relative;
@@ -301,7 +315,6 @@ ul.nav-dropdown--contents{
 ul.nav-dropdown--contents li{
     text-transform:capitalize;
     width:100%;
-    padding:0.5rem 0;
 }
 .left-nav{
     width:17%;
@@ -321,11 +334,14 @@ ul.nav-dropdown--contents li{
     margin-top:4.5rem;
 }
 .left-nav ul li:not(:last-child){
-    margin-bottom:2.37rem;
+    margin-bottom:2rem;
 }
-.left-nav--active{
+.left-nav--active, .left-nav a:hover{
     background-color:#A9306F;
-    padding:0.75em 0;
+}
+.left-nav a{
+    display:block;
+    padding:0.75em;
 }
 
 /*HEADER*/
@@ -534,108 +550,114 @@ footer .container{
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
-/* start of medium tablet styles */
-html{
-	font-size: 14px;
-}
-/*NAVIGATION*/
-nav{
-    height:auto;   
-}
-.nav--checkbox{
-	display:none;
-}
-.nav--checkbox:checked ~ .nav--button .nav--icon{
-	background-color:transparent;
-}
-.nav--checkbox:checked ~ .nav--button .nav--icon::before{
-	transform: rotate(-135deg);
-	background-color:red;
-}
-.nav--checkbox:checked ~ .nav--button .nav--icon::after{
-	transform: rotate(135deg);
-	background-color:red;
-}
-.nav--checkbox:checked ~ .nav{
-	overflow:auto;
-	height:100vh;
-}
-.nav--checkbox:checked ~ .nav ul{
-	height: auto;
-}
+    /* start of medium tablet styles */
+    html{
+        font-size: 14px;
+    }
+    /*NAVIGATION*/
+    nav{
+        height:auto;   
+    }
+    .nav--checkbox{
+        display:none;
+    }
+    .nav--checkbox:checked ~ .nav--button .nav--icon{
+        background-color:transparent;
+    }
+    .nav--checkbox:checked ~ .nav--button .nav--icon::before{
+        transform: rotate(-135deg);
+        background-color:red;
+    }
+    .nav--checkbox:checked ~ .nav--button .nav--icon::after{
+        transform: rotate(135deg);
+        background-color:red;
+    }
+    .nav--checkbox:checked ~ .nav{
+        overflow:auto;
+        height:100vh;
+        background-color:rgba(56, 63, 73, 1);
+    }
+    .nav--checkbox:checked ~ .nav ul{
+        height: auto;
+    }
+    .nav--button{
+        top: 0;
+        padding-top: 1.5rem;
+        right:0.75rem;
+        height:4.375rem;
+        position:absolute;
+        width:auto;
+        overflow:show;
+        z-index:3000;
+        cursor:pointer;
+    }
+    .nav--icon{
+        position:relative;
+        width:2.35rem;
+        margin-top: 0.5rem;
+    }
+    .nav--icon::before, .nav--icon::after{
+        content:" ";
+        position:absolute;	
+        width:100%;
+        left:0;
+    }
+    .nav--icon, .nav--icon::before, .nav--icon::after{
+        height: 0.25rem;	
+        display:inline-block;
+        background-color:#ffffff;
+        border-radius:30rem;
+        transition:all 0.4s;
+        transform-origin: 50% 100%;
+    }
+    .nav--icon::before{
+        top:-275%;
+        transform-origin: 52.5% 150%;
+    }
+    .nav--icon::after{
+        bottom:-275%;
+        transform-origin: 55% -150%;
+    }
+    .nav--button:hover .nav--icon{
+        margin-top: 0.35rem;
+    }
+    .nav{
+        position:relative;
+        width:auto;
+        height:auto;
+        top:0%;
+        left:0%;
+        transform:translate(0%,0%);
+        overflow:hidden;
+        transition:all 0.4s;
+        
+    }
+    .nav .logo{
+        height:4.375rem;
+        line-height:4.375rem;
+    }
+    .nav ul{
+        clear:both;
+        margin:0 auto;
+        height:0;
+        width:100%;
+        transition:all 0.4s;
+    }
+    .nav ul li{
+        display:block;
+        padding:1rem;
+    }
+    .nav-dropdown{
+        overflow:auto;
+    }
+    ul.nav-dropdown--contents{
+        background-color:transparent;
+        position:relative;
+        height:auto;
+        padding-bottom:0;
+    }
 
-.nav--button{
-	padding-top: 1.5rem;
-	padding-right:0.75rem;	
-	position:relative;
-	width:auto;
-	height:4.375rem;
-	float:right;
-	overflow:show;
-	cursor:pointer;
-}
-.nav--icon{
-	position:relative;
-	width:2.35rem;
-	margin-top: 0.5rem;
-}
-.nav--icon::before, .nav--icon::after{
-	content:" ";
-	position:absolute;	
-	width:100%;
-	left:0;
-}
-.nav--icon, .nav--icon::before, .nav--icon::after{
-	height: 0.25rem;	
-	display:inline-block;
-	background-color:#ffffff;
-	border-radius:30rem;
-	transition:all 0.4s;
-	transform-origin: 50% 100%;
-}
-.nav--icon::before{
-	top:-275%;
-	transform-origin: 52.5% 150%;
-}
-.nav--icon::after{
-	bottom:-275%;
-	transform-origin: 55% -150%;
-}
-.nav--button:hover .nav--icon{
-	margin-top: 0.35rem;
-}
-.nav{
-	position:relative;
-    width:auto;
-    height:auto;
-    top:0%;
-    left:0%;
-    transform:translate(0%,0%);
-    overflow:hidden;
-    transition:all 0.4s;
-    
-}
-.nav .logo{
-	height:4.375rem;
-	line-height:4.375rem;
-}
-.nav ul{
-	clear:both;
-    margin:0 auto;
-    height:0;
-    width:100%;
-    transition:all 0.4s;
-}
-.nav ul li{
-    display:block;
-    padding:1rem;
-}
-ul.nav-dropdown--contents{
-    background-color:transparent;
-    position:relative;
-    height:auto;
-}
-
-ul.nav-dropdown--contents li{
-    padding:0.5rem 0;
+    ul.nav-dropdown--contents li{
+        padding:0.5rem 0;
+    }
 }

@@ -162,6 +162,9 @@ form .row{
     border:solid black 6px;
     height: 13.43rem;
     margin-bottom:1.06rem;
+    margin-left: auto;
+    margin-right:auto;
+    display:block;
 }
 .btn{
     text-align:center;
@@ -169,7 +172,7 @@ form .row{
     padding: 0.625rem 1.25rem;
     border-style:none;
     border-radius:7px;
-    color:white;
+    color:#ffffff;
     background-color: #383F49;
 }
 .btn:hover{
@@ -193,8 +196,32 @@ form .row{
     background-color: #1B6095;
     padding: 0.67rem 3rem;
 }
+.btn--download{
+	background-color: #1B6095;
+}
+.btn__alt{
+	background-color: #ffffff;
+	border:solid #383F49 3px;
+	color: #383F49;
+    padding: calc(0.625rem - 3px) calc(1.25rem - 3px);
+}
+.btn__alt:hover{
+	background-color: #383F49;
+	color: #ffffff;
+}
+.btn__alt--play{
+	color: #1B6095;
+	border-color: rgba(169, 48, 111, 1);
+}
+.btn__alt--play:hover{
+	background-color: rgba(169, 48, 111, 1);
+	color: #ffffff;
+}
 section > .container{
     padding:4.69rem 0;
+}
+section.first-section{
+	padding-top:2.35rem;
 }
 .section-title--wrapper{
     margin-bottom:3.875rem;
@@ -212,9 +239,12 @@ section > .container{
 }
 
 /*NAVIGATION*/
+.nav--checkbox{
+	display:none;
+}
 nav{
     width:100%;
-    height:4.375rem; /*70px/16px = 4.375rem*/
+    height:4.375rem; /* 70px/16px = 4.375rem*/
     position: relative;
     z-index:999;
     color:white;
@@ -247,9 +277,7 @@ nav{
     display:inline-block;
     text-align:center;
     text-transform:uppercase;
-}
-.nav ul li:not(:last-child){
-    margin-right: 2.5rem; /*40px/16px =2.5rem */
+    padding-left:1.25rem;
 }
 .nav-dropdown{
     position:relative;
@@ -282,7 +310,7 @@ ul.nav-dropdown--contents li{
     position:fixed;
     height: calc(100% - 4.375rem);
     padding-top:8%;
-    top: 4.375rem;/*height of nav = 70px/16px = 4.375rem */
+    top: 4.375rem;/*height of nav = 70px/16px = 4.375rem*/
     overflow:auto;
 }
 .left-nav--title{
@@ -299,6 +327,7 @@ ul.nav-dropdown--contents li{
     background-color:#A9306F;
     padding:0.75em 0;
 }
+
 /*HEADER*/
 header{
 background-color:grey;
@@ -435,6 +464,9 @@ ul.card-membership--description li:not(:last-child){
     margin-left: 18%;
     position:relative;
 }
+.display .row-item{
+	padding-bottom:1.2rem;
+}
 .container-box--img{
     position:relative;
 }
@@ -498,4 +530,112 @@ ul.card-membership--description li:not(:last-child){
 }
 footer .container{
     height:auto;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+/* start of medium tablet styles */
+html{
+	font-size: 14px;
+}
+/*NAVIGATION*/
+nav{
+    height:auto;   
+}
+.nav--checkbox{
+	display:none;
+}
+.nav--checkbox:checked ~ .nav--button .nav--icon{
+	background-color:transparent;
+}
+.nav--checkbox:checked ~ .nav--button .nav--icon::before{
+	transform: rotate(-135deg);
+	background-color:red;
+}
+.nav--checkbox:checked ~ .nav--button .nav--icon::after{
+	transform: rotate(135deg);
+	background-color:red;
+}
+.nav--checkbox:checked ~ .nav{
+	overflow:auto;
+	height:100vh;
+}
+.nav--checkbox:checked ~ .nav ul{
+	height: auto;
+}
+
+.nav--button{
+	padding-top: 1.5rem;
+	padding-right:0.75rem;	
+	position:relative;
+	width:auto;
+	height:4.375rem;
+	float:right;
+	overflow:show;
+	cursor:pointer;
+}
+.nav--icon{
+	position:relative;
+	width:2.35rem;
+	margin-top: 0.5rem;
+}
+.nav--icon::before, .nav--icon::after{
+	content:" ";
+	position:absolute;	
+	width:100%;
+	left:0;
+}
+.nav--icon, .nav--icon::before, .nav--icon::after{
+	height: 0.25rem;	
+	display:inline-block;
+	background-color:#ffffff;
+	border-radius:30rem;
+	transition:all 0.4s;
+	transform-origin: 50% 100%;
+}
+.nav--icon::before{
+	top:-275%;
+	transform-origin: 52.5% 150%;
+}
+.nav--icon::after{
+	bottom:-275%;
+	transform-origin: 55% -150%;
+}
+.nav--button:hover .nav--icon{
+	margin-top: 0.35rem;
+}
+.nav{
+	position:relative;
+    width:auto;
+    height:auto;
+    top:0%;
+    left:0%;
+    transform:translate(0%,0%);
+    overflow:hidden;
+    transition:all 0.4s;
+    
+}
+.nav .logo{
+	height:4.375rem;
+	line-height:4.375rem;
+}
+.nav ul{
+	clear:both;
+    margin:0 auto;
+    height:0;
+    width:100%;
+    transition:all 0.4s;
+}
+.nav ul li{
+    display:block;
+    padding:1rem;
+}
+ul.nav-dropdown--contents{
+    background-color:transparent;
+    position:relative;
+    height:auto;
+}
+
+ul.nav-dropdown--contents li{
+    padding:0.5rem 0;
 }

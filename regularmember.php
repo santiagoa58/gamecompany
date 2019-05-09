@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameCompany - Premium Membership</title>
+    <title>GameCompany - Regular Membership</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Roboto:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,44 +14,40 @@
 			<span class="nav--icon">&nbsp;</span>
 		</label>
         <div class="nav">
-            <a href="index.html" class="logo">LOGO</a>
+            <a href="index.php" class="logo">LOGO</a>
             <ul id="nav-list">
-                <li class=""><a href="index.html">HOME</a></li>
+                <li class=""><a href="index.php">HOME</a></li>
                 <li class="nav-dropdown">INFORMATION
                     <ul class="nav-dropdown--contents">
-                        <li class=""><a href="aboutus.html">About Us</a></li>
+                        <li class=""><a href="aboutus.php">About Us</a></li>
                         <li class=""><a href="#">Statistics</a></li>
                     </ul>
                 </li>
-                <li class=""><a href="gamestore/latestgame.html">GAME STORE</a></li>
-                <li class=""><a href="register.html">REGISTER</a></li>
-                <li class=""><a href="signin.html">SIGN IN</a></li>
-                <li class=""><a href="#">START TRIAL</a></li>
+                <li class=""><a href="gamestore/latestgame.php">GAME STORE</a></li>
+                <li class=""><a href="register.php">REGISTER</a></li>
+                <li class=""><a href="signin.php">SIGN IN</a></li>
+                <li class=""><a href="premiummember.php">START TRIAL</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <!-- Premium Membership -->
+        <!-- Regular Membership -->
         <section class="first-section">     
             <div class="container section-box">
                 <div>
-                    <h2>Premium Membership</h2>
-                    <h4 class="membership-price__alt">$19.99 <span class="membership-price__small">per month</span>
+                    <h2>Regular Membership</h2>
+                    <h4 class="membership-price__alt">$9.99 <span class="membership-price__small">per month</span>
                     </h4>
                 </div>
                 <div class="row membership--description">
                     <div class="row-item">
                         <ul class="card-membership--description">
                             <li>
-                                <i class="icon icon--check">&#10004;</i>unlimited games per month
-                            </li>
-                            <li><i class="icon icon--check">&#10004;</i>early access to pre-releases</li>
-                            <li>
-                                <i class="icon icon--check">&#10004;</i>invites into beta tests
+                                <i class="icon icon--check">&#10004;</i>get up to 2 free games per month
                             </li>
                             <li>
-                                <i class="icon icon--check">&#10004;</i>get discounts on partner sites
+                                <i class="icon icon--check">&#10004;</i>get free demos of latest games
                             </li>
                         </ul>                       
                     </div>
@@ -88,7 +84,7 @@
                         <div class="row-item">         
                             <input type="button" value="Start 30 Day Trial" class="btn btn--trial">
                             <h4 class="or-buffer">OR</h4>      
-                            <a href="regularmember.html" class="btn btn__alt btn__alt--member">Regular Membership</a>  
+                            <a href="premiummember.php" class="btn btn__alt btn__alt--member">Premium Membership</a>  
                         </div>
                     </div>
                 </form>  
@@ -116,9 +112,9 @@
                     <li>SERVICES</li>
                     <li>
                         <ul class="footer-contents--item">
-                            <li><a href="gamestore/allgames.html">Game Store</a></li>
-                            <li><a href="premiummember.html">Memberships</a></li>
-                            <li><a href="gamestore/latestgame.html">Latest Game</a></li>
+                            <li><a href="gamestore/allgames.php">Game Store</a></li>
+                            <li><a href="premiummember.php">Memberships</a></li>
+                            <li><a href="gamestore/latestgame.php">Latest Game</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -130,7 +126,7 @@
                         <ul class="footer-contents--item">
                             <li><a href="#">Sales Statistics</a></li>
                             <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="aboutus.php">About Us</a></li>
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                     </li>
@@ -141,10 +137,10 @@
                     <li>ACCOUNT</li>
                     <li>
                         <ul class="footer-contents--item">
-                            <li><a href="register.html">Register</a></li>
-                            <li><a href="signin.html">Sign In</a></li>
-                            <li><a href="mydashboard/account.html">Account info</a></li>
-                            <li><a href="mydashboard/leaderboard.html">Leaderboard</a></li>
+                            <li><a href="register.php">Register</a></li>
+                            <li><a href="signin.php">Sign In</a></li>
+                            <li><a href="mydashboard/account.php">Account info</a></li>
+                            <li><a href="mydashboard/leaderboard.php">Leaderboard</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -14,19 +14,19 @@
 			<span class="nav--icon">&nbsp;</span>
 		</label>
         <div class="nav">
-            <a href="../index.html" class="logo">LOGO</a>
+            <a href="../index.php" class="logo">LOGO</a>
             <ul id="nav-list">
-                <li class=""><a href="../index.html">HOME</a></li>
+                <li class=""><a href="../index.php">HOME</a></li>
                 <li class="nav-dropdown">INFORMATION
                     <ul class="nav-dropdown--contents">
-                        <li class=""><a href="../aboutus.html">About Us</a></li>
+                        <li class=""><a href="../aboutus.php">About Us</a></li>
                         <li class=""><a href="#">Statistics</a></li>
                     </ul>
                 </li>
                 <li class="nav-current"><a href="#">GAME STORE</a></li>
-                <li class=""><a href="../register.html">REGISTER</a></li>
-                <li class=""><a href="../signin.html">SIGN IN</a></li>
-                <li class=""><a href="../premiummember.html">START TRIAL</a></li>
+                <li class=""><a href="../register.php">REGISTER</a></li>
+                <li class=""><a href="../signin.php">SIGN IN</a></li>
+                <li class=""><a href="../premiummember.php">START TRIAL</a></li>
             </ul>
         </div>
     </nav>
@@ -40,8 +40,8 @@
                     <div class="left-nav--title"><h3>GAME STORE</h3></div>
                     <ul>
                         <li class="left-nav--active"><a href="#">Latest Game</a></li>
-                        <li class=""><a href="topselling.html">Top Selling Games</a></li>
-                        <li class=""><a href="allgames.html">All Games</a></li>
+                        <li class=""><a href="topselling.php">Top Selling Games</a></li>
+                        <li class=""><a href="allgames.php">All Games</a></li>
                     </ul>
                 </nav>
               <!-- dynamic display area -->
@@ -92,9 +92,9 @@
                     <li class="footer-title">SERVICES</li>
                     <li class="footer-contents">
                         <ul class="footer-contents--item">
-                            <li><a href="allgames.html">Game Store</a></li>
-                            <li><a href="../premiummember.html">Memberships</a></li>
-                            <li><a href="latestgame.html">Latest Game</a></li>
+                            <li><a href="allgames.php">Game Store</a></li>
+                            <li><a href="../premiummember.php">Memberships</a></li>
+                            <li><a href="latestgame.php">Latest Game</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -106,7 +106,7 @@
                         <ul class="footer-contents--item">
                             <li><a href="#">Sales Statistics</a></li>
                             <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="../aboutus.html">About Us</a></li>
+                            <li><a href="../aboutus.php">About Us</a></li>
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                     </li>
@@ -117,10 +117,10 @@
                     <li class="footer-title">ACCOUNT</li>
                     <li class="footer-contents">
                         <ul class="footer-contents--item">
-                            <li><a href="../register.html">Register</a></li>
-                            <li><a href="../signin.html">Sign In</a></li>
-                            <li><a href="../mydashboard/account.html">Account info</a></li>
-                            <li><a href="../mydashboard/leaderboard.html">Leaderboard</a></li>
+                            <li><a href="../register.php">Register</a></li>
+                            <li><a href="../signin.php">Sign In</a></li>
+                            <li><a href="../mydashboard/account.php">Account info</a></li>
+                            <li><a href="../mydashboard/leaderboard.php">Leaderboard</a></li>
                         </ul>
                     </li>
                 </ul>

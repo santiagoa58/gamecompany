@@ -14,19 +14,19 @@
 			<span class="nav--icon">&nbsp;</span>
 		</label>
         <div class="nav">
-            <a href="index.html" class="logo">LOGO</a>
+            <a href="index.php" class="logo">LOGO</a>
             <ul id="nav-list">
                 <li class="nav-current"><a href="#">HOME</a></li>
                 <li class="nav-dropdown">INFORMATION
                     <ul class="nav-dropdown--contents">
-                        <li class=""><a href="aboutus.html">About Us</a></li>
+                        <li class=""><a href="aboutus.php">About Us</a></li>
                         <li class=""><a href="#">Statistics</a></li>
                     </ul>
                 </li>
-                <li class=""><a href="gamestore/latestgame.html">GAME STORE</a></li>
-                <li class=""><a href="register.html">REGISTER</a></li>
-                <li class=""><a href="signin.html">SIGN IN</a></li>
-                <li class=""><a href="premiummember.html">START TRIAL</a></li>
+                <li class=""><a href="gamestore/latestgame.php">GAME STORE</a></li>
+                <li class=""><a href="register.php">REGISTER</a></li>
+                <li class=""><a href="signin.php">SIGN IN</a></li>
+                <li class=""><a href="premiummember.php">START TRIAL</a></li>
             </ul>
         </div>
     </nav>
@@ -72,7 +72,7 @@
                         <button class="btn btn--viewinfo">View Info</button>
                     </div>
                 </div>
-                <a id="more" href="gamestore/allgames.html">
+                <a id="more" href="gamestore/allgames.php">
                     <h4>View More</h4>
                     <div class="dotted-underline"></div>
                 </a>
@@ -138,13 +138,13 @@
                 <div class="container--content">
                     <ul id="faq-list">
                         <li><span class="faq-i">Q:</span> Where are my games?</li>
-                        <li><span class="faq-i">A:</span> All of your games are available for download and can be found in <a href="mydashboard/mygames.html">my dashboard</a> once you are signed in.</li>
+                        <li><span class="faq-i">A:</span> All of your games are available for download and can be found in <a href="mydashboard/mygames.php">my dashboard</a> once you are signed in.</li>
 
                         <li><span class="faq-i">Q:</span> How can I change my membership?</li>
-                        <li><span class="faq-i">A:</span> You can upgrade or downgrade your membership by heading to <a href="mydashboard/account.html">my dashboard</a> once you are logged in.  Navigate to account info and click on the change button next to membership type.</li>
+                        <li><span class="faq-i">A:</span> You can upgrade or downgrade your membership by heading to <a href="mydashboard/account.php">my dashboard</a> once you are logged in.  Navigate to account info and click on the change button next to membership type.</li>
 
                         <li><span class="faq-i">Q:</span> Can I purchase individual games without a subscription plan?</li>
-                        <li><span class="faq-i">A:</span> Yes! Once you create an account, head on over to the <a href="gamestore/latestgame.html">game store</a> and only pay for the games you want.</li>
+                        <li><span class="faq-i">A:</span> Yes! Once you create an account, head on over to the <a href="gamestore/latestgame.php">game store</a> and only pay for the games you want.</li>
                     </ul>
                 </div>
             </div>
@@ -171,9 +171,9 @@
                     <li>SERVICES</li>
                     <li>
                         <ul class="footer-contents--item">
-                            <li><a href="gamestore/allgames.html">Game Store</a></li>
-                            <li><a href="premiummember.html">Memberships</a></li>
-                            <li><a href="gamestore/latestgame.html">Latest Game</a></li>
+                            <li><a href="gamestore/allgames.php">Game Store</a></li>
+                            <li><a href="premiummember.php">Memberships</a></li>
+                            <li><a href="gamestore/latestgame.php">Latest Game</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -185,7 +185,7 @@
                         <ul class="footer-contents--item">
                             <li><a href="#">Sales Statistics</a></li>
                             <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="aboutus.php">About Us</a></li>
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                     </li>
@@ -196,10 +196,10 @@
                     <li>ACCOUNT</li>
                     <li>
                         <ul class="footer-contents--item">
-                            <li><a href="register.html">Register</a></li>
-                            <li><a href="signin.html">Sign In</a></li>
-                            <li><a href="mydashboard/account.html">Account info</a></li>
-                            <li><a href="mydashboard/leaderboard.html">Leaderboard</a></li>
+                            <li><a href="register.php">Register</a></li>
+                            <li><a href="signin.php">Sign In</a></li>
+                            <li><a href="mydashboard/account.php">Account info</a></li>
+                            <li><a href="mydashboard/leaderboard.php">Leaderboard</a></li>
                         </ul>
                     </li>
                 </ul>

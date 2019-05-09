@@ -130,11 +130,15 @@ form .row{
     margin-top: 4.375rem;
     margin-bottom:4.375rem;
 }
+.section-title{
+    text-transform:capitalize;
+}
 .section-box > .section-title{
     padding-bottom:3.4rem;  
 }
 .container-box > .section-title{
     padding-bottom:2.45rem;  
+    text-align:center;
 }
 .section-title--wrapper{
     position:relative;
@@ -176,6 +180,7 @@ form .row{
     border-radius:7px;
     color:#ffffff;
     background-color: #383F49;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.2);
 }
 .btn:hover{
     cursor:pointer;
@@ -219,6 +224,13 @@ form .row{
 	background-color: rgba(169, 48, 111, 1);
 	color: #ffffff;
 }
+.btn__alt--member{
+	border-color: #FF7417;
+}
+.btn__alt--member:hover{
+	background-color: #FF7417;
+	color: #ffffff;
+}
 section > .container{
     padding:4.69rem 0;
 }
@@ -226,7 +238,7 @@ section.first-section{
 	padding-top:2.35rem;
 }
 .section-title--wrapper{
-    margin-bottom:3.875rem;
+    margin-bottom:1.5rem;
 }
 .icon{
     color: #A9306F;
@@ -238,6 +250,11 @@ section.first-section{
 }
 .icon--check{
     padding-right: 1.25rem;
+}
+.or-buffer{
+    text-transform:uppercase;
+    padding: 1.25rem;
+    font-weight:700;
 }
 
 /*NAVIGATION*/
@@ -271,6 +288,9 @@ nav{
 }
 .nav .logo{
     float:left;
+    margin-top:0.5rem;
+    margin-left:0.25rem;
+    border:solid 1px white;
 }
 .nav ul{
     float:right;
@@ -278,7 +298,7 @@ nav{
 .nav ul li{
     display:inline-block;
     text-align:center;
-    padding:0;
+    padding:0 0.2rem;
     text-transform:uppercase;
 }
 .nav ul li a:hover, .nav ul li a:focus{
@@ -313,24 +333,24 @@ ul.nav-dropdown--contents{
     padding-bottom:0.5rem;
     display:none;
 }
-
 ul.nav-dropdown--contents li{
     text-transform:capitalize;
     width:100%;
 }
 .left-nav{
-    width:17%;
-    max-width:14.5rem;
+    width:auto;
+    padding-top:2.18rem;
     z-index: 900;
-    position:fixed;
-    height: calc(100% - 4.375rem);
-    padding-top:8%;
-    top: 4.375rem;/*height of nav = 70px/16px = 4.375rem*/
+    text-align:center;
+    position:relative;
     overflow:auto;
+    overflow-x:hidden;
+    height:auto;
 }
 .left-nav--title{
     text-transform:uppercase;
     letter-spacing:0.05em;
+    padding: 0 0.5rem;
 }
 .left-nav ul{
     margin-top:4.5rem;
@@ -348,10 +368,19 @@ ul.nav-dropdown--contents li{
 
 /*HEADER*/
 header{
-background-color:grey;
 height: 91vh; /*viewport height = 768; header height = 631px+nav-height; 701/768 = 91.27vh*/
 position:relative;
 min-height: 28rem;
+}
+header#landing{
+    background-color: #383F49;
+    background-image: linear-gradient(to right top,
+    rgba(0,0,0, .65),
+    rgba(0,0,0, .65)),
+    url("imgs/homepage-header/carl-raw-457982-unsplash.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 header .container{
     height:100%;
@@ -411,7 +440,14 @@ header .container{
 
 /*MEMBERSHIP*/
 #membership{
-    background-color:grey;
+    background-color:#777C86;
+    background-image: linear-gradient(to right top,
+    rgba(119,124,134, .85),
+    rgba(119,124,134, .85)),
+    url("imgs/homepage-memberships/Path\ 652.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .card-membership{
     width:22rem;
@@ -426,13 +462,38 @@ header .container{
     right:0;
     left:0;
 }
+.membership-form{
+    border:solid rgba(56, 63, 73, 0.25) 2px;
+    border-radius:4px;
+    background-color:ghostwhite;
+    width:auto;
+    margin:0 auto;
+    display:inline-block;
+}
+.membership-form h4{
+    padding-bottom:1.25rem;
+    text-transform:uppercase;
+    font-weight:700;
+}
+.membership-form .btn{
+    margin-top:-1rem;
+}
 .membership-price{
     padding:1.6rem 0;
     color:#ffffff;
     font-size:2rem;
 }
+.membership-price__alt{
+    font-size:2rem;
+    padding-top:0.75rem;
+    padding-bottom:1rem;
+}
 .membership-price__small{
     font-size:1rem;
+}
+.membership--description{
+    padding-top:0;
+    padding-bottom:2.375rem;
 }
 .card-membership--title{
     padding-top: 2.5rem;
@@ -454,6 +515,9 @@ ul.card-membership--description li:not(:last-child){
 #faq .section-box{
     background-color: #F1F1F1;
 }
+#faq .section-title--wrapper{
+    margin-bottom:3.875rem;
+}
 #faq-list{
     text-align:left;
 }
@@ -471,15 +535,32 @@ ul.card-membership--description li:not(:last-child){
 
 /*GAMESTORE*/
 .dashboard{
-    padding: 4.375rem 0;
+    /* padding: 4.375rem 0; */
+    padding:0;
     position:relative;
-    min-height:90%;
+    top:4.375rem;
+    height:auto;
+    min-height:100%;
+}
+.dashboard > .container{
+    text-align:left;
+    display:flex;
+    flex-direction:row;
+    height:auto;
+    min-height:100%;
+    position:relative;
+    align-items:stretch;
+    padding:0;
+    justify-content:space-between;
 }
 .display{
-    width:79%; /*100% - left nav's width of 17%*/
+    /*width:79%; /*100% - left nav's width of 17%*/
     background-color:white;
-    display:inline-block;
-    margin-left: 18%;
+    height:auto;
+    min-height:100vh;
+    display:block;
+    width:70%;
+    margin:2.18rem auto 8rem auto;
     position:relative;
 }
 .display .row-item{
@@ -496,6 +577,9 @@ ul.card-membership--description li:not(:last-child){
 .container-box--title{
     text-transform:uppercase;
 }
+.content-box--contents{
+    text-align:center;
+}
 .content-box--contents p{
     font-style:italic;
 }
@@ -505,6 +589,13 @@ ul.card-membership--description li:not(:last-child){
     text-align:left;
     width:22rem;
     margin:0 auto;
+}
+.input-container__short, .input-container__tiny{
+    width:auto;
+    display:inline-block;
+}
+.input-container__tiny{
+    width:9rem;
 }
 .input-container:not(:last-child){
     margin-bottom:2.25rem;
@@ -525,8 +616,10 @@ ul.card-membership--description li:not(:last-child){
 .input-container label{
     display:block;
     font-weight:700;
+    color: #383F49;
     padding-left:0.5rem;
     padding-bottom:0.2rem;
+    text-transform:capitalize;
 }
 .signin-register{
     margin-top:2.25rem;
@@ -571,6 +664,10 @@ ul.card-membership--description li:not(:last-child){
     padding:0.25rem;
     margin-left:0.5rem;
     color: rgba(56, 63, 73, 1);
+}
+.account-data .icon:hover{
+    cursor:pointer;
+    background-color:#ffffff;
 }
 .password-symbol{
     font-style:initial;
@@ -623,6 +720,7 @@ footer .container{
     }
     .nav--checkbox:checked ~ .nav ul{
         height: auto;
+        display:block;
     }
     .nav--button{
         top: 0;
@@ -684,6 +782,7 @@ footer .container{
         clear:both;
         margin:0 auto;
         height:0;
+        display:none;
         width:100%;
         transition:all 0.4s;
     }
@@ -699,6 +798,7 @@ footer .container{
         position:relative;
         height:auto;
         padding-bottom:0;
+        display:block;
     }
 
     ul.nav-dropdown--contents li{

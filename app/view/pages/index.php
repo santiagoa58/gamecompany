@@ -1,46 +1,17 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameCompany - Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Roboto:400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- navigation -->        
-    <nav class="nav__sticky">
-		<input type="checkbox" class="nav--checkbox" id="nav-toggle">
-		<label for="nav-toggle" class="nav--button">
-			<span class="nav--icon">&nbsp;</span>
-		</label>
-        <div class="nav">
-            <a href="index.php" class="logo">LOGO</a>
-            <ul id="nav-list">
-                <li class="nav-current"><a href="#">HOME</a></li>
-                <li class="nav-dropdown">INFORMATION
-                    <ul class="nav-dropdown--contents">
-                        <li class=""><a href="aboutus.php">About Us</a></li>
-                        <li class=""><a href="#">Statistics</a></li>
-                    </ul>
-                </li>
-                <li class=""><a href="gamestore/latestgame.php">GAME STORE</a></li>
-                <li class=""><a href="register.php">REGISTER</a></li>
-                <li class=""><a href="signin.php">SIGN IN</a></li>
-                <li class=""><a href="premiummember.php">START TRIAL</a></li>
-            </ul>
-        </div>
-    </nav>
-
+<?php 
+$page = 'home';
+require_once APPROOT.'/view/inc/header.php';
+?>
     <!-- homepage hero box -->
     <header id="landing">
         <div class="container">
             <div id="homepage-header">
                 <div id="banner">
-                        <h1 id="main-title">Game Company</h1>
-                        <h3 id="main-subtitle">Get our newly released <span id="latest-game">Game Name</span> today!</h3>
+                        <h1 id="main-title"><?php echo $data['title']; ?></h1>
+                        <h3 id="main-subtitle"><?php echo $data['subtitle']; ?></h3>
                 </div>
                 <div id="call-to-action">
-                    <button class="btn btn--trial">Start 30 Day Trial</button>
+                    <a href="#" class="btn btn--trial">Start 30 Day Trial</a>
                 </div>
             </div>
         </div>
@@ -57,19 +28,19 @@
                 <div class="row">
                     <div class="row-item">
                         <div class="game-card">forest game 2</div>
-                        <button class="btn btn--viewinfo">View Info</button>
+                        <a href="#" class="btn btn--viewinfo">View Info</a>
                     </div>
                     <div class="row-item">
                         <div class="game-card">city game</div>
-                        <button class="btn btn--viewinfo">View Info</button>
+                        <a href="#" class="btn btn--viewinfo">View Info</a>
                     </div>
                     <div class="row-item">
                         <div class="game-card">peace game</div>
-                        <button class="btn btn--viewinfo">View Info</button>
+                        <a href="#" class="btn btn--viewinfo">View Info</a>
                     </div>
                     <div class="row-item">
                         <div class="game-card">war game 4</div>
-                        <button class="btn btn--viewinfo">View Info</button>
+                        <a href="#" class="btn btn--viewinfo">View Info</a>
                     </div>
                 </div>
                 <a id="more" href="gamestore/allgames.php">
@@ -98,7 +69,7 @@
                         </div>
                         <div class="card-membership--price">
                             <h4 class="membership-price">$9.99 <span class="membership-price__small">per month</span></h4>
-                            <button class="btn btn--trial">Start 30 Day Trial</button>
+                            <a href="#" class="btn btn--trial">Start 30 Day Trial</a>
                         </div>
                     </div>
                 </div>
@@ -122,7 +93,7 @@
                         </div>
                         <div class="card-membership--price">
                             <h4 class="membership-price">$19.99 <span class="membership-price__small">per month</span></h4>
-                            <button class="btn btn--trial">Start 30 Day Trial</button>
+                            <a href="#" class="btn btn--trial">Start 30 Day Trial</a>
                         </div>
                     </div>
                 </div>
@@ -150,65 +121,5 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="row container">
-            <div class="row-item">
-                <ul class="footer-list">
-                    <li>THE TEAM</li>
-                    <li>
-                        <ul class="footer-contents--item">
-                            <li>Team Member 1</li>
-                            <li>Team Member 2</li>
-                            <li>Team Member 3</li>
-                            <li>Team Member 4</li>
-                            <li>Team Member 5</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="row-item">
-                <ul class="footer-list">
-                    <li>SERVICES</li>
-                    <li>
-                        <ul class="footer-contents--item">
-                            <li><a href="gamestore/allgames.php">Game Store</a></li>
-                            <li><a href="premiummember.php">Memberships</a></li>
-                            <li><a href="gamestore/latestgame.php">Latest Game</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="row-item">
-                <ul class="footer-list">
-                    <li>INFORMATION</li>
-                    <li>
-                        <ul class="footer-contents--item">
-                            <li><a href="#">Sales Statistics</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="aboutus.php">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="row-item">
-                <ul class="footer-list">
-                    <li>ACCOUNT</li>
-                    <li>
-                        <ul class="footer-contents--item">
-                            <li><a href="register.php">Register</a></li>
-                            <li><a href="signin.php">Sign In</a></li>
-                            <li><a href="mydashboard/account.php">Account info</a></li>
-                            <li><a href="mydashboard/leaderboard.php">Leaderboard</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="row-item">
-                <div class="logo footer-logo">&copy;GameCompany</div>
-            </div>
-        </div>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+
+    <?php require_once APPROOT.'/view/inc/footer.php';?>

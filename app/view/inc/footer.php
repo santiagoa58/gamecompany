@@ -19,9 +19,9 @@
                     <li>SERVICES</li>
                     <li>
                         <ul class="footer-contents--item">
-                            <li><a href="<?php echo URLROOT; ?>/Gamestore/allgames">Game Store</a></li>
-                            <li><a href="<?php echo URLROOT; ?>/Membership/premiummember">Memberships</a></li>
-                            <li><a href="<?php echo URLROOT; ?>/Gamestore/latestgame">Latest Game</a></li>
+                            <li><a href="<?php echo $links["allgames"]; ?>">Game Store</a></li>
+                            <li><a href="<?php echo $links["premiummembership"]; ?>">Memberships</a></li>
+                            <li><a href="<?php echo $links["latestgames"]; ?>">Latest Game</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -31,10 +31,10 @@
                     <li>INFORMATION</li>
                     <li>
                         <ul class="footer-contents--item">
-                            <li><a href="<?php echo URLROOT; ?>/#">Sales Statistics</a></li>
-                            <li><a href="<?php echo URLROOT; ?>/#">Terms & Conditions</a></li>
-                            <li><a href="<?php echo URLROOT; ?>/Pages/aboutus">About Us</a></li>
-                            <li><a href="<?php echo URLROOT; ?>/#">Contact Us</a></li>
+                            <li><a href="<?php echo $links["statistics"]; ?>">Sales Statistics</a></li>
+                            <li><a href="<?php echo $links["termsandconditions"]; ?>">Terms & Conditions</a></li>
+                            <li><a href="<?php echo $links["aboutus"]; ?>">About Us</a></li>
+                            <li><a href="<?php echo $links["contactus"]; ?>">Contact Us</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -44,10 +44,10 @@
                     <li>ACCOUNT</li>
                     <li>
                         <ul class="footer-contents--item">
-                            <li><a href="<?php echo URLROOT; ?>/user/register">Register</a></li>
-                            <li><a href="<?php echo URLROOT; ?>/user/signin">Sign In</a></li>
-                            <li><a href="<?php echo URLROOT; ?>/mydashboard/account">Account info</a></li>
-                            <li><a href="<?php echo URLROOT; ?>/mydashboard/leaderboard">Leaderboard</a></li>
+                            <li><a href="<?php echo $links["register"]; ?>">Register</a></li>
+                            <li><a href="<?php echo $links["signin"]; ?>">Sign In</a></li>
+                            <li><a href="<?php echo $links["myaccount"]; ?>">Account info</a></li>
+                            <li><a href="<?php echo $links["leaderboard"]; ?>">Leaderboard</a></li>
                         </ul>
                     </li>
                 </ul>

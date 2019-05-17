@@ -178,9 +178,11 @@ form .row{
     padding: 0.625rem 1.25rem;
     border-style:none;
     border-radius:7px;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+}
+.btn--default{
     color:#ffffff;
     background-color: #383F49;
-    text-shadow: 0px 2px 2px rgba(0,0,0,0.2);
 }
 .btn:hover{
     cursor:pointer;
@@ -206,9 +208,9 @@ form .row{
 .btn--download{
 	background-color: #1B6095;
 }
-.btn__alt{
+.btn__alt{ 
 	background-color: #ffffff;
-	border:solid #383F49 3px;
+	border:solid #383F49 3px; 
 	color: #383F49;
     padding: calc(0.625rem - 3px) calc(1.25rem - 3px);
 }
@@ -238,7 +240,8 @@ section.first-section{
 	padding-top:2.35rem;
 }
 .section-title--wrapper{
-    margin-bottom:1.5rem;
+    /*margin-bottom: 1.5rem;*/
+    margin-bottom:3.875rem;
 }
 .icon{
     color: #A9306F;
@@ -256,39 +259,6 @@ section.first-section{
     padding: 1.25rem;
     font-weight:700;
 }
-
-/*REUSABLE MODULES*/
-.game-card{
-    width:9rem;
-    border:solid white 6px;
-    height: 13.43rem;
-    margin-bottom:1.06rem;
-}
-.btn{
-    text-align:center;
-    height: auto;
-    padding: 0.625rem 1.25rem;
-    border-style:none;
-    border-radius:7px;
-    color:white;
-    background-color: #383F49;
-}
-.btn:hover{
-    cursor:pointer;
-    transform:translatey(-5%);
-    box-shadow: 1px 3px 5px 0px rgba(0,0,0,.15);
-}
-.btn:active{
-    transform:translatey(3%);
-    box-shadow: 0px 2px 3px 0px rgba(0,0,0,.25);
-}
-section .container{
-    padding-top:4.69rem;
-}
-.section-title--wrapper{
-    margin-bottom:3.875rem;
-}
-
 
 /*NAVIGATION*/
 .nav--checkbox{
@@ -410,7 +380,7 @@ header#landing{
     background-image: linear-gradient(to right top,
     rgba(0,0,0, .65),
     rgba(0,0,0, .65)),
-    url("imgs/homepage-header/carl-raw-457982-unsplash.png");
+    url("../imgs/homepage-header/carl-raw-457982-unsplash.png");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -477,7 +447,7 @@ header .container{
     background-image: linear-gradient(to right top,
     rgba(119,124,134, .85),
     rgba(119,124,134, .85)),
-    url("imgs/homepage-memberships/Path\ 652.png");
+    url("../imgs/homepage-memberships/Path\ 652.png");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;

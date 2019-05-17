@@ -6,7 +6,6 @@ $database = "csci355_SQL";
 $username = "csci355admin";
 $pwd = "csci_355";
 
-
 try {
   $conn = new PDO("sqlsrv:server=$serverName;Database=$database", $username, $pwd);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

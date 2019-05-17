@@ -33,7 +33,7 @@ body{
 main{
     min-height:95vh;
 }
-h1,h2,h3,h4,h5,h6, nav a, .btn, nav .nav-dropdown{
+h1,h2,h3,h4,h5,h6, nav a, .btn, nav .nav-dropdown, button{
     font-family: 'Montserrat', sans-serif;
 }
 h1,h2,h3,h4,h5,h6{
@@ -178,10 +178,10 @@ form .row{
     padding: 0.625rem 1.25rem;
     border-style:none;
     border-radius:7px;
+    color:white;
     text-shadow: 0px 2px 2px rgba(0,0,0,0.2);
 }
 .btn--default{
-    color:#ffffff;
     background-color: #383F49;
 }
 .btn:hover{

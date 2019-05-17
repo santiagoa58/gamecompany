@@ -19,7 +19,9 @@ function getLinks(){
         "mygames" => URLROOT."/Mydashboard/mygames",
         "myaccount" => URLROOT."/Mydashboard/account",
         "leaderboard" => URLROOT."/Mydashboard/leaderboard",
-        "latestgames" => URLROOT."/Gamestore/latestgame",
-        "allgames" => URLROOT."/Gamestore/allgames"
+        "playarea" => URLROOT."/Mydashboard/playarea",
+        "latestgames" => URLROOT."/Gamestore/latestgames",
+        "allgames" => URLROOT."/Gamestore/allgames",
+        "topselling" => URLROOT."/Gamestore/topselling"
     );
 }

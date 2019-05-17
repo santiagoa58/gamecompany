@@ -43,7 +43,7 @@
                 ],
                 [
                     "question" => "Can I purchase individual games without a subscription plan?", 
-                    "answer" => "Yes! Once you create an account, head on over to the <a href=\"".$links["mygames"]."\">game store</a> and only pay for the games you want."                    
+                    "answer" => "Yes! Once you create an account, head on over to the <a href=\"".$links["allgames"]."\">game store</a> and only pay for the games you want."                    
                 ]
                 )
             );

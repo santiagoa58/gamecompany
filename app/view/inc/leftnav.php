@@ -1,37 +1,37 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue mb-3">
-    <div class="container">
-        <a class="navbar-brand text-white" href="<?php echo URLROOT; ?>">
-            <?php echo SITENAME; ?>
-        </a>
-        <button class="navbar-toggler cursor-pointer" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<!-- left-nav -->
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item <?php echo ($page == 'home') ? 'active' : ''; ?>">
-                    <a class="nav-link" href="<?php echo URLROOT; ?>">Home</a>
-                </li>
-                <li class="nav-item <?php echo ($page == 'about') ? 'active' : ''; ?>">
-                    <a class="nav-link" href="<?php echo URLROOT; ?>/Pages/About">About</a>
-                </li>
-            </ul>
+<?php if($page === "gamestore") : ?>
+<nav class="left-nav">
+    <div class="left-nav--title"><h3>GAME STORE</h3></div>
+    <ul>
+        <li class="<?php echo ($subpage == 'latestgames') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["latestgames"]; ?>">Latest Game</a></li>
 
-            <ul class="navbar-nav ml-auto">
-                <?php if(isset($_SESSION["user_id"])) : ?>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo URLROOT; ?>/users/logout">Wish to Logout <?php echo $_SESSION['user_name'];?>?</a>
-                </li>
+        <li class="<?php echo ($subpage == 'topselling') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["topselling"]; ?>">Top Selling Games</a></li>
 
-                <?Php else : ?>
-                <li class="nav-item <?php echo ($page == 'register') ? 'active' : ''; ?>">
-                    <a class="nav-link" href="<?php echo URLROOT; ?>/users/register">Register</a>
-                </li>
-                <li class="nav-item <?php echo ($page == 'login') ? 'active' : ''; ?>">
-                    <a class="nav-link" href="<?php echo URLROOT; ?>/users/login">Login</a>
-                </li>
-                <?php endif; ?>
-            </ul>
-        </div>
-    </div>
+        <li class="<?php echo ($subpage == 'allgames') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["allgames"]; ?>">All Games</a></li>
+    </ul>
 </nav>
+
+<?php elseif($page === "mydashboard") : ?>
+    <!-- left-nav -->
+    <nav class="left-nav">
+        <div class="left-nav--title"><h3>username</h3></div>
+        <ul>
+            <li class="<?php echo ($subpage == 'mygames') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["mygames"]; ?>">My Games</a></li>
+
+            <li class="<?php echo ($subpage == 'leaderboard') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["leaderboard"]; ?>">Leaderboard</a></li>
+
+            <li class="<?php echo ($subpage == 'account') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["myaccount"]; ?>">Account Info</a></li>
+
+            <li class="<?php echo ($subpage == 'playarea') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["playarea"]; ?>">Play Area</a></li>
+        </ul>
+    </nav>
+
+<?php else :?>
+    <nav class="left-nav">
+        <div class="left-nav--title"><h3>Coming Soon</h3></div>
+        <ul>
+        </ul>
+    </nav>
+    
+<?php endif; ?>

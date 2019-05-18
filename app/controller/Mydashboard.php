@@ -14,7 +14,13 @@ class Mydashboard extends Controller{
     }
 
     public function mygames(){
-        $data = array();
+        
+        $data = array(
+            array("name" => "Angry Cube", "description" => "some really angry cubes"),
+            array("name" => "Forest Game", "description" => "some forest game"),
+            array("name" => "City Game", "description" => "some city game"),
+            array("name" => "War Game", "description" => "forests again")
+        );
 
         $this->view('mydashboard/mygames',$data);
     }

@@ -276,11 +276,14 @@ section.first-section{
 .modal-contents {
     overflow: auto;
     width: 80%;
-    height: 80%;
+    height: 85%;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#modal .modal-contents .content-box--contents{
+    padding-bottom:2rem;
 }
 #modal-exit {
     font-size: 3rem;
@@ -412,8 +415,8 @@ min-height: 28rem;
 header#landing{
     background-color: #383F49;
     background-image: linear-gradient(to right top,
-    rgba(0,0,0, .65),
-    rgba(0,0,0, .65)),
+    rgba(0,0,0, .8),
+    rgba(0,0,0, .8)),
     url("../imgs/homepage-header/carl-raw-457982-unsplash.png");
     background-size:cover;
     background-repeat: no-repeat;

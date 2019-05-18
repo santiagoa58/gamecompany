@@ -39,8 +39,11 @@ require_once APPROOT.'/view/inc/header.php';
                     <h4>View More</h4>
                     <div class="dotted-underline"></div>
                 </a>
+
+        <?php require_once APPROOT.'/view/inc/modal.php';?>
             </div>
         </section>
+
 
         <!-- membership -->
         <section id="membership">

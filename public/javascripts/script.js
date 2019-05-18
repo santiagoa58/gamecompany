@@ -5,6 +5,15 @@ window.addEventListener('resize', (e) => {
     }
     });
 
+//MODAL
+function hideModal() {
+    //hide modal
+    document.getElementById("modal").style = "display:none";
+    document.getElementById("modal-gamename").innerText = "";
+}
+
 function viewGameInfo(gameName){
-    console.log(gameName);
+        //show modal
+        document.getElementById("modal").style = "display:block";
+        document.getElementById("modal-gamename").innerText = gameName;
 }

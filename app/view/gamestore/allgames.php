@@ -14,41 +14,18 @@ require_once APPROOT.'/view/inc/header.php';
                 <div class="display">
                     <div class="container-box">
                         <div class="row">
-                            <div class="row-item">
-                                <div class="game-card">forest game</div>
-                                <button class="btn btn--viewinfo">View Info</button>
-                                </div>
-                                <div class="row-item">
-                                    <div class="game-card">city game</div>
-                                <button class="btn btn--viewinfo">View Info</button>
-                                </div>
-                                <div class="row-item">
-                                    <div class="game-card">forest game 2</div>
-                                <button class="btn btn--viewinfo">View Info</button>
-                                </div>
-                                <div class="row-item">
-                                    <div class="game-card">war game</div>
-                                <button class="btn btn--viewinfo">View Info</button>
-                                </div>
-                                <div class="row-item">
-                                    <div class="game-card">war game 2</div>
-                                <button class="btn btn--viewinfo">View Info</button>
-                                </div>
-                                <div class="row-item">
-                                    <div class="game-card">war game 3</div>
-                                <button class="btn btn--viewinfo">View Info</button>
-                                </div>
-                                <div class="row-item">
-                                    <div class="game-card">war game 4</div>
-                                <button class="btn btn--viewinfo">View Info</button>
-                                </div>
-                                <div class="row-item">
-                                    <div class="game-card">peace game</div>
-                                <button class="btn btn--viewinfo">View Info</button>
-                                </div>
+                        <?php foreach($data as $game){
+                            echo "
+                            <div class='row-item'>
+                                <div class='game-card'>".$game["name"]."</div>
+                                <button class='btn btn--viewinfo' onclick='viewGameInfo(\"".$game["name"]."\")'>View Info</button>
+                            </div>
+                            ";
+                        }?>                            
                         </div>
                     </div>
                 </div>
+        <?php require_once APPROOT.'/view/inc/modal.php';?>
             </div>
         </section>
     </main>

@@ -260,6 +260,40 @@ section.first-section{
     font-weight:700;
 }
 
+/*MODAL*/
+#modal {
+    display: none;
+    margin: 0 auto;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3000;
+    background: rgba(0, 0, 0, 0.75);
+}
+.modal-contents {
+    overflow: auto;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#modal-exit {
+    font-size: 3rem;
+    display: inline-block;
+    position: absolute;
+    top: 0.25em;
+    right: 0.75em;
+}
+#modal-exit:hover {
+    color: red;
+    cursor: pointer;
+}
+
 /*NAVIGATION*/
 .nav--checkbox{
 	display:none;

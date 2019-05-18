@@ -22,6 +22,7 @@ function getLinks(){
         "playarea" => URLROOT."/Mydashboard/playarea",
         "latestgames" => URLROOT."/Gamestore/latestgames",
         "allgames" => URLROOT."/Gamestore/allgames",
-        "topselling" => URLROOT."/Gamestore/topselling"
+        "topselling" => URLROOT."/Gamestore/topselling",
+        "graphs" => URLROOT."/Statistics/graphs"
     );
 }

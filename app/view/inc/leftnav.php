@@ -26,6 +26,15 @@
             <li class="<?php echo ($subpage == 'playarea') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["playarea"]; ?>">Play Area</a></li>
         </ul>
     </nav>
+    
+<?php elseif($page === "statistics") : ?>
+    <!-- left-nav -->
+    <nav class="left-nav">
+        <div class="left-nav--title"><h3>Statistics</h3></div>
+        <ul>
+            <li class="<?php echo ($subpage == 'graphs') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["graphs"]; ?>">Graphs</a></li>
+        </ul>
+    </nav>
 
 <?php else :?>
     <nav class="left-nav">

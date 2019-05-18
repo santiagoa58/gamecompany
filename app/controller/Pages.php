@@ -62,7 +62,7 @@
         public function aboutus(){
             $data = [
                 'title' => 'About Us',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem numquam, ex obcaecati culpa neque, laudantium consequuntur cum necessitatibus porro pariatur, perferendis sunt eos? Voluptas, eius id. Rerum nam libero delectus?'
+                'description' => 'We are The GameCompany and we provide original games, from first person shooters to racing to role playing games. Our games are available to purchase individually or are free to play with a monthly subscription plan.  We strive to provide our customers with the most options so that they can enjoy our games in as many ways as possible.  Wether it be playing online through our website, or on a mobile device.'
             ];
             
            $this->view('pages/aboutus',$data);

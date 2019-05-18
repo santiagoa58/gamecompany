@@ -8,7 +8,7 @@
         <span class="nav--icon">&nbsp;</span>
     </label>
     <div class="nav">
-        <a href="<?php echo $links["home"]; ?>" class="logo">LOGO</a>
+        <a href="<?php echo $links["home"]; ?>" class="logo"><img src="<?php echo URLROOT; ?>/public/imgs/logo-cube-orange.png" alt="LOGO"></a>
         <ul id="nav-list">
             <li class="<?php echo ($page == 'home') ? 'nav-current' : ''; ?>">
                 <a href="<?php echo $links["home"]; ?>">HOME</a>

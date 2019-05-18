@@ -19,7 +19,7 @@
         <ul>
             <li class="<?php echo ($subpage == 'mygames') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["mygames"]; ?>">My Games</a></li>
 
-            <li class="<?php echo ($subpage == 'leaderboard') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["leaderboard"]; ?>">Leaderboard</a></li>
+            <li class="<?php echo ($subpage == 'leaderboard') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["leaderboard"]; ?>">Leader<wbr>board</a></li>
 
             <li class="<?php echo ($subpage == 'account') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["myaccount"]; ?>">Account Info</a></li>
 

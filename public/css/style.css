@@ -5,6 +5,7 @@ color: #05518B; //color primary
 color: #1B6095; //color primary 2 (for submission buttons)
 color: #A9306F; OR color: rgba(169, 48, 111, 1); //color secondary
 color: #FF7417; //color tertiary
+color: #CC0425; //color red
 color: #666C77; OR color: rgba(102,108,119,1); //lighter gray
 color: #F1F1F1; OR color: rgba(241,241,241,1); //off-white
 color: #383F49; OR color:rgba(56, 63, 73, 1); //dark grey for nav and footer
@@ -116,6 +117,7 @@ form .row{
 }
 .row-item{
     margin:1rem;
+    padding-bottom: 0.75rem;
 }
 .section-box, .container-box{
     background-color: #F1F1F1;
@@ -293,7 +295,7 @@ section.first-section{
     right: 0.75em;
 }
 #modal-exit:hover {
-    color: red;
+    color: #CC0425;
     cursor: pointer;
 }
 
@@ -386,11 +388,13 @@ ul.nav-dropdown--contents li{
     overflow:auto;
     overflow-x:hidden;
     height:auto;
+    background-color:rgba(56, 63, 73, 1);
 }
 .left-nav--title{
     text-transform:uppercase;
     letter-spacing:0.05em;
     padding: 0 0.5rem;
+    word-break:break-all;
 }
 .left-nav ul{
     margin-top:4.5rem;
@@ -411,6 +415,7 @@ header{
 height: 91vh; /*viewport height = 768; header height = 631px+nav-height; 701/768 = 91.27vh*/
 position:relative;
 min-height: 28rem;
+overflow:auto;
 }
 header#landing{
     background-color: #383F49;
@@ -457,6 +462,7 @@ header .container{
 }
 #top-selling .section-title--wrapper{
     text-align:left;
+    padding-left:1rem;
 }
 #top-selling .dotted-underline{
     margin-left:1rem;
@@ -561,6 +567,9 @@ ul.card-membership--description li:not(:last-child){
 #faq-list{
     text-align:left;
 }
+#faq-list li{
+    padding-bottom: 0.5rem;
+}
 #faq-list li:nth-of-type(2n){
     margin-bottom:1.5rem;
 }
@@ -619,6 +628,7 @@ ul.card-membership--description li:not(:last-child){
 }
 .content-box--contents{
     text-align:center;
+    padding-top:2rem;
 }
 .content-box--contents p{
     font-style:italic;
@@ -627,9 +637,17 @@ ul.card-membership--description li:not(:last-child){
 /*REGISTER*/
 .input-container{
     text-align:left;
-    width:22rem;
+    width:85%;
+    max-width:22rem;
     margin:0 auto;
 }
+
+#register .input-container{
+    width:100%;
+    margin: 0 10rem 0 0;
+    padding-bottom: 1.5rem;
+}
+
 .input-container__short, .input-container__tiny{
     width:auto;
     display:inline-block;
@@ -730,17 +748,41 @@ footer .container{
 }
 
 /*MEDIA QUERIES*/
+@media screen and (max-width: 600px){
+    #homepage-header{
+        top:50%;
+        padding-left:2rem;
+        transform:translatey(-50%);
+    } 
+    #call-to-action{
+        margin-left: 10%;
+    }
+}
 @media screen and (max-width: 768px) {
     /* start of medium tablet styles */
     html{
         font-size: 14px;
     }
+    
+    /*DASHBOARD*/
+    .dashboard{
+        top:0rem;
+    }
+
     /*NAVIGATION*/
     nav{
-        height:auto;   
+        height:auto;
+        background-color:rgba(56, 63, 73, 0);   
     }
     .nav--checkbox{
         display:none;
+    }
+    .nav--checkbox:checked ~ .nav--button{
+        background-color:transparent;
+    }
+    .nav--checkbox:checked ~ .nav .logo{
+        opacity:1;
+        display:block;
     }
     .nav--checkbox:checked ~ .nav--button .nav--icon{
         background-color:transparent;
@@ -763,12 +805,14 @@ footer .container{
         display:block;
     }
     .nav--button{
-        top: 0;
-        padding-top: 1.5rem;
-        right:0.75rem;
-        height:4.375rem;
-        position:absolute;
+        top: 0.5rem;        
+        right:0.5rem;
+        height:auto;
+        position:fixed;
         width:auto;
+        padding: 1.5rem 1rem 2rem 1rem;
+        border-radius: 30rem;
+        background-color:rgba(56, 63, 73, 0.85);
         overflow:show;
         z-index:3000;
         cursor:pointer;
@@ -815,6 +859,8 @@ footer .container{
         
     }
     .nav .logo{
+        opacity: 0;
+        display:none;
         height:4.375rem;
         line-height:4.375rem;
     }

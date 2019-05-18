@@ -4,7 +4,7 @@ require_once APPROOT.'/view/inc/header.php';
 ?>
     <main>
         <!-- register -->
-        <section class="first-section">
+        <section id="register" class="first-section">
             <div class="container section-box">
                 <h2 class="section-title"><?php echo $data["title"];?></h2>
                 <form action="#" method="post">

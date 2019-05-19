@@ -15,7 +15,7 @@
 <?php elseif($page === "mydashboard") : ?>
     <!-- left-nav -->
     <nav class="left-nav">
-        <div class="left-nav--title"><h3>username</h3></div>
+        <div class="left-nav--title"><h3><?php echo $_SESSION['username']; ?></h3></div>
         <ul>
             <li class="<?php echo ($subpage == 'mygames') ? 'left-nav--active' : ''; ?>"><a href="<?php echo $links["mygames"]; ?>">My Games</a></li>
 

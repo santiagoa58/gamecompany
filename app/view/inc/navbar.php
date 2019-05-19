@@ -26,9 +26,12 @@
             <li class="<?php echo ($page == 'gamestore') ? 'nav-current' : ''; ?>">
                 <a href="<?php echo $links["latestgames"]; ?>">GAME STORE</a>
             </li>
-            <?php if(isset($_SESSION["user_id"])) : ?>                
+            <?php if(isset($_SESSION["username"])) : ?>                
                 <li class="<?php echo ($page == 'mydashboard') ? 'nav-current' : ''; ?>">
                     <a href="<?php echo $links["mygames"]; ?>">MY Dashboard</a>
+                </li>                
+                <li class="<?php echo ($page == 'mydashboard') ? 'nav-current' : ''; ?>">
+                    <a href="<?php echo $links["signout"]; ?>">Sign out</a>
                 </li>
 
                 <?php else : ?>

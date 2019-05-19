@@ -13,8 +13,10 @@ class Mydashboard extends Controller{
         redirect('mydashboard/mygames');
     }
 
-    public function mygames(){
-        
+    public function mygames(){   
+        if(!isLoggedIn()){
+            redirect('user/signin');
+        }        
         $data = array(
             array("name" => "Angry Cube", "description" => "some really angry cubes"),
             array("name" => "Forest Game", "description" => "some forest game"),
@@ -25,19 +27,29 @@ class Mydashboard extends Controller{
         $this->view('mydashboard/mygames',$data);
     }
 
-    public function leaderboard(){
+    public function leaderboard(){   
+        if(!isLoggedIn()){
+            redirect('user/signin');
+        }
+        
         $data = array();
 
         $this->view('mydashboard/leaderboard',$data);
     }
 
-    public function account(){
+    public function account(){   
+        if(!isLoggedIn()){
+            redirect('user/signin');
+        }
         $data = array();
 
         $this->view('mydashboard/account',$data);
     }
 
-    public function playarea(){
+    public function playarea(){   
+        if(!isLoggedIn()){
+            redirect('user/signin');
+        }
         $data = array();
 
         $this->view('mydashboard/playarea',$data);

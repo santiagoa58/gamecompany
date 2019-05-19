@@ -1,0 +1,3 @@
+#connect to mysql database using command line
+mysql --host csci355-mysql.mysql.database.azure.com --user csci355admin@csci355-mysql -p
+

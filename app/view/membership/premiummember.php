@@ -24,42 +24,46 @@ require_once APPROOT.'/view/inc/header.php';
                         </ul>                       
                     </div>
                 </div>
+                <div class="card-payment">
+                    <!-- Card from -->
+                    <div id="paymentSection">
+                        <form method="post" id="paymentForm">
+                            <h4>Item: <?php echo $data["payment"]["itemName"]; ?></h4>
+                            <h4>Payable amount: $<?php echo $data["payment"]["payableAmount"].' '.$data["payment"]["currency"]; ?></h4>
+                            <ul>
+                                <li>
+                                    <label>Card number</label>
+                                    <input type="text" placeholder="1234 5678 9012 3456" maxlength="20" id="card_number" name="card_number">
+                                </li>
                     
-                <form action="#" class="membership-form">
-                    <div class="row">
-                        <div class="row-item">         
-                            <h4>Debit/Credit Card Info</h4>
-                            <div class="input-container">
-                                <label for="cardnumber">Card number</label>
-                                <input type="text" name="cardnumber" placeholder="12345678912345678" class="input-field__white">
-                            </div>
-                            <div class="input-container input-container__tiny">
-                                <label for="expmonth">Expiry month</label>
-                                <input type="text" name="expmonth" placeholder="MM" class="">
-                            </div>
-                            <div class="input-container input-container__tiny">
-                                <label for="expyear">Expiry year</label>
-                                <input type="text" name="expyear" placeholder="YYYY" class="">
-                            </div>
-                            <div class="input-container input-container__tiny">
-                                <label for="cvv">CVV</label>
-                                <input type="text" name="cvv" placeholder="123" class="">
-                            </div>
-
-                            <div class="input-container">
-                                <label for="cardname">Name On Card</label>
-                                <input type="text" name="cardname" placeholder="John Doe" class="input-field__white">
-                            </div>
-                        </div>
+                                <li class="vertical">
+                                    <ul>
+                                        <li>
+                                            <label>Expiry month</label>
+                                            <input type="text" placeholder="MM" maxlength="5" id="expiry_month" name="expiry_month">
+                                        </li>
+                                        <li>
+                                            <label>Expiry year</label>
+                                            <input type="text" placeholder="YYYY" maxlength="5" id="expiry_year" name="expiry_year">
+                                        </li>
+                                        <li>
+                                            <label>CVV</label>
+                                            <input type="text" placeholder="123" maxlength="3" id="cvv" name="cvv">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label>Name on card</label>
+                                    <input type="text" placeholder="John Doe" id="name_on_card" name="name_on_card">
+                                </li>
+                                <li>
+                                    <input type="hidden" name="card_type" id="card_type" value=""/>
+                                    <input type="button" name="card_submit" id="cardSubmitBtn" value="Proceed" class="payment-btn" disabled="true" >
+                                </li>
+                            </ul>
+                        </form>
                     </div>
-                    <div class="row">
-                        <div class="row-item">         
-                            <input type="button" value="Start 30 Day Trial" class="btn btn--trial">
-                            <h4 class="or-buffer">OR</h4>      
-                            <a href="<?php echo $links["regularmembership"]; ?>" class="btn btn__alt btn__alt--member"><?php echo $data["regulartitle"]; ?></a>  
-                        </div>
-                    </div>
-                </form>  
+                </div>
             </div>         
         </section>
     </main>

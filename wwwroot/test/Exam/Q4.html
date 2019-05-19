@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>HTML file</title>
+</head>
+<link rel="stylesheet" href="styles\style1.css">
+<body>
+<script>
+function myscript(x){
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function(){
+		if (this.readyState == 4 && this.status == 200)
+		{	
+			document.getElementById("searchresult").innerHTML = this.responseText;
+		}
+	}
+	xmlhttp.open("GET","Q4_Server.php?q=" + x, true);
+	xmlhttp.send();
+}
+</script>
+
+<form>
+	Search for <input id="mysearchvalue" type="text" onkeyup="myscript(this.value)">
+</form>	
+<div id="searchresult"></div>
+</body>
+
+</html>

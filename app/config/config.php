@@ -16,7 +16,7 @@ define('PAYPAL_SANDBOX', TRUE); //TRUE or FALSE
 define('APPROOT', dirname(dirname(__FILE__)));
 
     // URL Root
-define ("URLROOT", "http://localhost/gamecompany");
+define ("URLROOT", "http://gamecompany.azurewebsites.net");
 
     // Site Name
 define("SITENAME", "The Game Company");
